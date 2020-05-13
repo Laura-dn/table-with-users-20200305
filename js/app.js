@@ -47,12 +47,6 @@ function showUser() {
             <td>${arr[(i-1)].location.country}, ${arr[(i-1)].location.city}, ${arr[(i-1)].location.postcode} 
             ${arr[(i-1)].location.state}, ${arr[(i-1)].location.street.number} ${arr[(i-1)].location.street.name}</td>
             <td>${arr[(i-1)].phone}</td>`;
-
-
-            // for(let j = 0; j < arrHead.length; j++) {
-            //     let td = document.createElement("td");
-            //     td.innerHTML = 
-            // }
         }
 
         table.append(tr);
@@ -60,34 +54,5 @@ function showUser() {
 
     section.append(table);
 }
-
-//('https://randomuser.me/api/', showUser)- https://randomuser.me/api/?results=10
-
-/**Функция обработчик события load объекта AJAX
- * arguments : none
- * return : none
- */
-// function showUser(){
-//     console.log('Операция получения данных с сервера завершена');
-//     const str = dom.cards.innerHTML;
-//     dom.cards.innerHTML = renderUser(JSON.parse(this.responseText).results[0]) + str;
-// }
-
-
-/**Функция генерации карточки в виде HTML-строки
- * arguments:
- *  object user : полная информация о новом пользователе
- * return:
- *  string : html-строку с карточкой
- */
-// function renderUser(user){
-//     return `<div class="card d-inline-block m-2" style="width: 18rem;">
-//     <img src="${user.picture.large}" class="card-img-top" alt="user-pic">
-//     <div class="card-body">
-//         <h5 class="card-title">${user.name.title} ${user.name.first} ${user.name.last}</h5>
-//         <p class="card-text">${user.dob.age} ${user.gender}, ${user.nat}</p>
-//     </div>
-// </div>`;
-// }
 
 document.querySelector("#btn").addEventListener("click", load);
