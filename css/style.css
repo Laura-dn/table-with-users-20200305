@@ -1,12 +1,35 @@
-/*table {
-    border: 1px solid grey;
-    border-collapse: collapse;
-    width: 25%;
-    height: 50%;
+body {
+    margin: 20px auto;
+    width: 60%;
+    background-color: azure;
 }
-th, td {
-    border: 1px solid grey;
+
+section, article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
+
 button {
-    margin: 20px;
-}*/
+    border-radius: 6px;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px 0 20px 0;
+}
+
+input {
+    padding: 5px 10px;
+    min-width: 200px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+table, td, th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 5px;
+}
